@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - My Personal Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 10px 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+    }
+    .container img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+    .description {
+      max-width: 400px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="views/hobbies.html">Hobbies</a>
+      <a href="views/projects.html">Projects</a>
+    </div>
+    <div>
+      <i class="fas fa-house" style="color: white; font-size: 24px;"></i>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <img src="resources/img/me.jpg" alt="me" style="width: 150px; height: auto; border-radius: 50%;">
+    <div class="description">
+      <h1>Hello, I'm Ben Atkinson</h1>
+      <p>
+        Welcome to my personal website! I'm passionate about outdoor activites and school. 
+        Here, you'll find information about my hobbies, projects, and more.
+      </p>
+      <a href="views/resume.html">View My Resume</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Connect with me:</p>
+    <a href="https://www.linkedin.com/in/benjamin-atkinson-4899b8230/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="https://github.com/beat2319" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <a href="https://instagram.com/bennie.atk/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+  </footer>
+</body>
+</html>
