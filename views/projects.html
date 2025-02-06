@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - My Personal Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 10px 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 20px;
+      padding: 20px;
+    }
+    .project-card {
+      flex: 0 0 auto;
+      width: 300px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      scroll-snap-align: start;
+      position: relative;
+    }
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .project-card .card-content {
+      padding: 15px;
+      text-align: center;
+    }
+    .project-card h3 {
+      margin: 10px 0;
+      font-size: 1.5em;
+    }
+    .project-card p {
+      color: #555;
+      font-size: 1em;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div>
+      <a href="home.html">Home</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="projects.html">Projects</a>
+    </div>
+    <div>
+      <i class="fas fa-code" style="color: white; font-size: 24px;"></i>
+    </div>
+  </nav>
+
+  <!-- Projects Carousel -->
+  <div class="carousel">
+    <!-- Project 1 -->
+    <a href="https://github.com/beat2319/CSCI2820_Final" style="text-decoration: none; color: inherit;">
+        <div class="project-card">
+          <img src="../resources/img/project1.jpg" alt="Project 1">
+          <div class="card-content">
+            <h3>Project 1</h3>
+            <p>This was a project for my linear algebra class, it demonstrates my skills for both python and math.</p>
+          </div>
+        </div>
+      </a>
+
+    <!-- Project 2 (To Be Determined) -->
+    <a href="home.html" style="text-decoration: none; color: inherit;">
+      <div class="project-card">
+        <img src="../resources/img/wip.jpg" alt="To Be Determined">
+        <div class="card-content">
+          <h3>Project 2</h3>
+          <p>To Be Determined</p>
+        </div>
+      </div>
+    </a>
+
+    <!-- Project 3 (To Be Determined) -->
+    <a href="home.html" style="text-decoration: none; color: inherit;">
+      <div class="project-card">
+        <img src="../resources/img/wip.jpg" alt="To Be Determined">
+        <div class="card-content">
+          <h3>Project 3</h3>
+          <p>To Be Determined</p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Connect with me:</p>
+    <a href="https://www.linkedin.com/in/benjamin-atkinson-4899b8230/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="https://github.com/beat2319" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <a href="https://instagram.com/bennie.atk/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+  </footer>
+</body>
+</html>
